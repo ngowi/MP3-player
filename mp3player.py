@@ -4,6 +4,7 @@
 
 from time import sleep
 from pygame import mixer
+
 print("\n\nMP3 player v1.0\n\n")
 
 try:
@@ -17,7 +18,7 @@ track = album.split()
 print("ALBUM: %s"%("DAMN by Kendrick Lamar"))
 def player(track):
     mixer.init()
-    mixer.music.load("DAMN/"+track+".mp3")
+    mixer.music.load("DAMN/"+track+".mp3") # DAMN is directory containing mp3 tracks
     mixer.music.play()
     return
 for x in  track:
